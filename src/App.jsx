@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { useLocalStorageState } from 'use-local-storage-state'
 import './App.css'
 
-function App() {
+export function App() {
   const [weather, setWeather] = useState({});
   const [activities, setActivities] = useLocalStorageState ("activites",{defaultValue: {}});
   function handleAddActivity (newActivity) {
