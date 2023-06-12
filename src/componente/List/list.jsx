@@ -1,6 +1,6 @@
 import "./List.css";
 
-export function List ({activities}){
+export function List ({activities, isGoodWeather}){
 
     return(
         <ul className="list">
