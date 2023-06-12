@@ -1,8 +1,8 @@
-import {Form} from "./components/Form/form";
-import {List} from "./components/List/list";
-import { useState } from 'react'
-import { useLocalStorageState } from 'use-local-storage-state'
-import './App.css'
+import {Form} from "./componente/Form/form";
+import {List} from "./componente/List/list";
+import { useState } from 'react';
+import { useLocalStorageState } from 'use-local-storage-state';
+import './App.css';
 
 export function App() {
   const [weather, setWeather] = useState({});
