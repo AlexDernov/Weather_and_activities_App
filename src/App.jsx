@@ -1,3 +1,5 @@
+import {Form} from "./components/Form/form";
+import {List} from "./components/List/list";
 import { useState } from 'react'
 import { useLocalStorageState } from 'use-local-storage-state'
 import './App.css'
@@ -7,11 +9,11 @@ function App() {
   const [activities, setActivities] = useLocalStorageState ("activites",{defaultValue: {}});
   function handleAddActivity (newActivity) {
     setActivities([...activities, {id: uid(),...newActivity}]);
-  activities.filter
-  function handleDelete
   }
-  const weatherUrl = "https://example-apis.vercel.app/api/weather";
+  
+ 
   async function getWeather() {
+    const weatherUrl = "https://example-apis.vercel.app/api/weather";
     try {
       const response = await fetch(weatherUrl);
       const data = await response.json();
